@@ -1,0 +1,1 @@
+﻿DELETE FROM Tbl_MTC_ChiTietNhatTrinh WHERE Code IN @Code

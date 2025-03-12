@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PhanMemQuanLyThiCong.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DuAnHienTai" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CongTrinhHienTai" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PathHienTai" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TokenTBT" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Theme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Light</Value>
+    </Setting>
+    <Setting Name="UserId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TempInfo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CategoryCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">YWq5h8MUB92Zt8x0ejhzlA==</Value>
+    </Setting>
+    <Setting Name="UriChat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KJA5d/2ULIuU0jqPt8s7HXhjm9Y7ynjkzoCVcOWH4AulBrHc4+keZn9yntNPpPbjTeWc0tfJmzvdgL+qYV7eDQ==</Value>
+    </Setting>
+    <Setting Name="UriAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KJA5d/2ULIuU0jqPt8s7HXhjm9Y7ynjkzoCVcOWH4AulBrHc4+keZn9yntNPpPbjbYisE+/bzWJxff/yk1R85A==</Value>
+    </Setting>
+    <Setting Name="ThoiTietAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KJA5d/2ULIuU0jqPt8s7HXhjm9Y7ynjkzoCVcOWH4AulBrHc4+keZn9yntNPpPbjTeWc0tfJmzvdgL+qYV7eDQ==</Value>
+    </Setting>
+    <Setting Name="KeyOldAPI" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MK+wX9R0y4ZXrzgM2Nj95rB1x9NVpXiXdd+GLeKuMLyXEIFc8iHN2t42XEWF4Ze9VpdwEGcdZAvmYNqewS6QgNUwUj62d3LwHADs0tSri+s=</Value>
+    </Setting>
+    <Setting Name="UseCache" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TempLengh_3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TempLengh_2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TempLengh_1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TempLengh_0" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TempCountBlock" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TokenCustomer" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TempCategoryCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsLicenseMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SerialNo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AllPermission" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Token" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Province" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CongTacInNhomVisible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoDivisionVolume" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

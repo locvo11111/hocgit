@@ -1,0 +1,1 @@
+﻿SELECT * FROM Tbl_GiaoViec_FileDinhKem

@@ -1,0 +1,22 @@
+﻿INSERT INTO Tbl_MTC_ChiTietNhatTrinh (
+	Code,
+	TenMaythiCong,
+	CodeCongTac,
+	CodeCongTacThuCong,
+	GioBatDauSang,
+	GioKetThucSang,
+	GioBatDauChieu,
+	GioKetThucChieu,
+	GioBatDauToi,
+	GioKetThucToi,
+	TongGio,
+	HinhAnh,
+	NgayThang,
+	NhienLieuChinh,
+	NhienLieuPhu,
+	GhiChu 
+)
+VALUES
+	(
+	@Code,@TenMaythiCong,@CodeCongTac,@CodeCongTacThuCong,@GioBatDauSang,@GioKetThucSang,@GioBatDauChieu,@GioKetThucChieu,@GioBatDauToi,@GioKetThucToi,@TongGio,@HinhAnh,@NgayThang,@NhienLieuChinh,@NhienLieuPhu,@GhiChu 
+	)

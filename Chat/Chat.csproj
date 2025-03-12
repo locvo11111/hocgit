@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{494CA604-8C54-4567-BFF2-83F65A6DB76F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chat</RootNamespace>
+    <AssemblyName>Chat</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Utils.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AspNet.SignalR.Client, Version=2.4.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Client.2.4.3\lib\net45\Microsoft.AspNet.SignalR.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.Connections.Abstractions, Version=6.0.7.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.Connections.Abstractions.6.0.7\lib\net461\Microsoft.AspNetCore.Connections.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Client.Core, Version=6.0.7.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Client.Core.6.0.7\lib\net461\Microsoft.AspNetCore.SignalR.Client.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Common, Version=6.0.7.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Common.6.0.7\lib\net461\Microsoft.AspNetCore.SignalR.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNetCore.SignalR.Protocols.Json, Version=6.0.7.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNetCore.SignalR.Protocols.Json.6.0.7\lib\net461\Microsoft.AspNetCore.SignalR.Protocols.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Features, Version=6.0.7.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Features.6.0.7\lib\net461\Microsoft.Extensions.Features.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.6.0.0\lib\net461\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Options.6.0.0\lib\net461\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.Primitives.6.0.0\lib\net461\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=6.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.6.0.3\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.5\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.6.0.0\lib\net461\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChatBox\AppSettigns.cs" />
+    <Compile Include="ChatBox\ConnextService.cs" />
+    <Compile Include="ChatBox\ISettingsService.cs" />
+    <Compile Include="ChatBox\Model\BusinessViewModel.cs" />
+    <Compile Include="ChatBox\Model\ConstructionViewModel.cs" />
+    <Compile Include="ChatBox\Model\ContactViewsModel.cs" />
+    <Compile Include="ChatBox\Model\FileCheckItem.cs" />
+    <Compile Include="ChatBox\Model\ManageBusinessFileViewModel.cs" />
+    <Compile Include="ChatBox\Model\ManageGroupMenberViewModel.cs" />
+    <Compile Include="ChatBox\Model\ManageMessageViewModel.cs" />
+    <Compile Include="ChatBox\Model\ManageTasksByMembersViewModel.cs" />
+    <Compile Include="ChatBox\Model\ManageWorkFollowFile.cs" />
+    <Compile Include="ChatBox\Model\ManageWorkViewModel.cs" />
+    <Compile Include="ChatBox\Model\MemberChatViewModel.cs" />
+    <Compile Include="ChatBox\Model\MesgersData.cs" />
+    <Compile Include="ChatBox\Model\MessageDto.cs" />
+    <Compile Include="ChatBox\Model\NoteApproveWorks.cs" />
+    <Compile Include="ChatBox\Model\RoleManageWorkandManageWorkViewModel.cs" />
+    <Compile Include="ChatBox\Model\RoleManageWorkViewModel.cs" />
+    <Compile Include="ChatBox\Model\WorkFileMember.cs" />
+    <Compile Include="ChatBox\Model\WorkType.cs" />
+    <Compile Include="ChatBox\Style.cs" />
+    <Compile Include="ChatBox\ViewModels\ApproveFileBusiness.cs" />
+    <Compile Include="ChatBox\ViewModels\Base\ChannelViewModel.cs" />
+    <Compile Include="ChatBox\ViewModels\Base\UserInfoViewModel.cs" />
+    <Compile Include="ChatBox\ViewModels\ContactsViewModel.cs" />
+    <Compile Include="ChatBox\ViewModels\ContactViewModel.cs" />
+    <Compile Include="ChatBox\ViewModels\MessagesViewModel.cs" />
+    <Compile Include="ChatBox\ViewModels\MessengerViewModel.cs" />
+    <Compile Include="ChatBox\ViewModels\SignInViewModel.cs" />
+    <Compile Include="ChatBox\ViewModels\UserViewModel.cs" />
+    <Compile Include="ChatBox\Views\AddFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\AddFile.Designer.cs">
+      <DependentUpon>AddFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\ApproveWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\ApproveWork.Designer.cs">
+      <DependentUpon>ApproveWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\BusinessTableView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\BusinessTableView.Designer.cs">
+      <DependentUpon>BusinessTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\BusinessView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\BusinessView.Designer.cs">
+      <DependentUpon>BusinessView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\ContactsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\ContactsView.Designer.cs">
+      <DependentUpon>ContactsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\FrmGuiDuyet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\FrmGuiDuyet.Designer.cs">
+      <DependentUpon>FrmGuiDuyet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\MessagesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\MessagesView.Designer.cs">
+      <DependentUpon>MessagesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\ThongTinDaDuyet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\ThongTinDaDuyet.Designer.cs">
+      <DependentUpon>ThongTinDaDuyet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatBox\Views\XtraFormNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatBox\Views\XtraFormNot.Designer.cs">
+      <DependentUpon>XtraFormNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatHub\ChatFunction.cs" />
+    <Compile Include="ChatHub\ChatService.cs" />
+    <Compile Include="ChatHub\IChatService.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChatBox\Resource\Css\Contact.Css" />
+    <Content Include="ChatBox\Resource\Css\ContactInfo.Css" />
+    <Content Include="ChatBox\Resource\Css\ContactTooltip.Css" />
+    <Content Include="ChatBox\Resource\Css\Menu.Css" />
+    <Content Include="ChatBox\Resource\Css\Message.Css" />
+    <Content Include="ChatBox\Resource\Css\MessageFile.Css" />
+    <Content Include="ChatBox\Resource\Css\MessageImg.Css" />
+    <Content Include="ChatBox\Resource\Css\MyMessage.Css" />
+    <Content Include="ChatBox\Resource\Css\MyMessagesFile.Css" />
+    <Content Include="ChatBox\Resource\Css\MyMessagesImg.Css" />
+    <Content Include="ChatBox\Resource\Css\NoMessages.Css" />
+    <Content Include="ChatBox\Resource\Css\SearchPanel.Css" />
+    <Content Include="ChatBox\Resource\Css\SignIn.Css" />
+    <Content Include="ChatBox\Resource\Css\Toolbar.Css" />
+    <Content Include="ChatBox\Resource\Css\TypingBox.Css" />
+    <Content Include="ChatBox\Resource\Css\UserInfo.Css" />
+    <Content Include="ChatBox\Resource\csv.bmp" />
+    <Content Include="ChatBox\Resource\Html\Contact.Html" />
+    <Content Include="ChatBox\Resource\Html\ContactInfo.Html" />
+    <Content Include="ChatBox\Resource\Html\ContactMenu.Html" />
+    <Content Include="ChatBox\Resource\Html\ContactTooltip.Html" />
+    <Content Include="ChatBox\Resource\Html\Menu.Html" />
+    <Content Include="ChatBox\Resource\Html\Message.Html" />
+    <Content Include="ChatBox\Resource\Html\MessageFile.html" />
+    <Content Include="ChatBox\Resource\Html\MessageImg.html" />
+    <Content Include="ChatBox\Resource\Html\MyMenu.Html" />
+    <Content Include="ChatBox\Resource\Html\MyMessage.Html" />
+    <Content Include="ChatBox\Resource\Html\MyMessagesFile.html" />
+    <Content Include="ChatBox\Resource\Html\MyMessagesImg.html" />
+    <Content Include="ChatBox\Resource\Html\NoMessages.Html" />
+    <Content Include="ChatBox\Resource\Html\SearchPanel.Html" />
+    <Content Include="ChatBox\Resource\Html\SignIn.Html" />
+    <Content Include="ChatBox\Resource\Html\Toolbar.Html" />
+    <Content Include="ChatBox\Resource\Html\TypingBox.Html" />
+    <Content Include="ChatBox\Resource\Html\UserInfo.Html" />
+    <Content Include="ChatBox\Resource\Svg\AppIcon.svg" />
+    <Content Include="ChatBox\Resource\Svg\Beak.Bottom.svg" />
+    <Content Include="ChatBox\Resource\Svg\Beak.Left.svg" />
+    <Content Include="ChatBox\Resource\Svg\Close.svg" />
+    <Content Include="ChatBox\Resource\Svg\Contact.svg" />
+    <Content Include="ChatBox\Resource\Svg\DarkTheme.svg" />
+    <Content Include="ChatBox\Resource\Svg\Facebook.svg" />
+    <Content Include="ChatBox\Resource\Svg\Google.svg" />
+    <Content Include="ChatBox\Resource\Svg\Like.svg" />
+    <Content Include="ChatBox\Resource\Svg\LinkedIn.svg" />
+    <Content Include="ChatBox\Resource\Svg\Menu.svg" />
+    <Content Include="ChatBox\Resource\Svg\Message.svg" />
+    <Content Include="ChatBox\Resource\Svg\PhoneCall.svg" />
+    <Content Include="ChatBox\Resource\Svg\Search.svg" />
+    <Content Include="ChatBox\Resource\Svg\Send.svg" />
+    <Content Include="ChatBox\Resource\Svg\User.svg" />
+    <Content Include="ChatBox\Resource\Svg\VideoCall.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChatBox\Views\AddFile.resx">
+      <DependentUpon>AddFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\ApproveWork.resx">
+      <DependentUpon>ApproveWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\BusinessTableView.resx">
+      <DependentUpon>BusinessTableView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\BusinessView.resx">
+      <DependentUpon>BusinessView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\ContactsView.resx">
+      <DependentUpon>ContactsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\FrmGuiDuyet.resx">
+      <DependentUpon>FrmGuiDuyet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\MessagesView.resx">
+      <DependentUpon>MessagesView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\ThongTinDaDuyet.resx">
+      <DependentUpon>ThongTinDaDuyet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatBox\Views\XtraFormNot.resx">
+      <DependentUpon>XtraFormNot.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets'))" />
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets'))" />
+  </Target>
+  <Import Project="..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" />
+</Project>

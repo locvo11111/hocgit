@@ -1,0 +1,39 @@
+using System;
+
+namespace VChatCore.ViewModels.SyncSqlite
+{
+    public class Tbl_TDKH_HaoPhiVatTu_KhoiLuongHangNgayViewModel : ICloneable
+    {
+		        public object Clone()
+        {
+            return this.MemberwiseClone();
+        }
+        //Column
+		public string Code { get; set; }
+		public string CodeHaoPhiVatTu { get; set; }
+		public string CodeCongViecCon { get; set; }
+		public string NhaCungCap { get; set; }
+		public DateTime Ngay { get; set; }
+		public string GhiChu { get; set; }
+		public bool IsEdited { get; set; } = false;
+		public bool IsEditedThanhTien { get; set; } = false;
+		public double? KhoiLuongKeHoach { get; set; }
+		public double? KhoiLuongBoSung { get; set; }
+		public long? ThanhTienKeHoach { get; set; }
+		public double? KhoiLuongKeHoachGiaoViec { get; set; }
+		public long? ThanhTienKeHoachGiaoViec { get; set; }
+		public double? KhoiLuongThiCong { get; set; }
+		public long? ThanhTienThiCong { get; set; }
+		public bool IsEditedKeHoach { get; set; } = false;
+		public bool IsEditedThiCong { get; set; } = false;
+		public bool IsSumKeHoach { get; set; } = false;
+		public bool IsSumThiCong { get; set; } = false;
+		public string DoBoc { get; set; }
+		public int? SortId { get; set; }
+		public bool ModifiedFromServer { get; set; } = false;
+		public bool? Modified { get; set; } = false;
+		public DateTime? LastChange { get; set; }
+		public DateTime? CreatedOn { get; set; }
+
+    }
+}

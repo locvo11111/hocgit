@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhanMemQuanLyThiCong", "PhanMemQuanLyThiCong\PhanMemQuanLyThiCong.csproj", "{01B73053-87AE-4C27-A071-70E2CAE1B590}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Debug|x64.Build.0 = Debug|Any CPU
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Debug|x86.ActiveCfg = Debug|x86
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Debug|x86.Build.0 = Debug|x86
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Release|x64.ActiveCfg = Release|x64
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Release|x64.Build.0 = Release|x64
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Release|x86.ActiveCfg = Release|x86
+		{01B73053-87AE-4C27-A071-70E2CAE1B590}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66AA548D-2175-4709-8B22-3FF990FAB72B}
+	EndGlobalSection
+EndGlobal

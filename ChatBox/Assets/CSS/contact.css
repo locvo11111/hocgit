@@ -1,0 +1,108 @@
+.contact {
+	height: 72px;
+	background-color: @Window;
+	color: @WindowText;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+
+.container {
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-grow: 1;
+	padding-right: 12px;
+}
+
+.border {
+	border-top: solid 1px @Window;
+	border-bottom: solid 1px @WindowText/0.1;
+}
+
+:root:select .border {
+	border-top: solid 0px @Window;
+	border-bottom: solid 2px @Highlight;
+}
+
+.avatar-container {
+	padding: 4px;
+	width: 64px;
+	height: 64px;
+}
+
+.avatar {
+	margin: 8px;
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+	border: 1px solid @WindowText/0.1;
+}
+
+.status {
+	margin-top: -64px;
+	margin-left: 48px;
+	width: 8px;
+	height: 8px;
+	border-style: solid;
+	border-width: 4px;
+	border-color: @Window;
+	background-color: @Warning;
+	border-radius: 8px;
+}
+
+.contact-info {
+	flex-grow: 1;
+}
+
+.nameAndInfo {
+	display: flex;
+	align-items: center;
+}
+
+.name {
+	font-size: 18px;
+	line-height: 24px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.info {
+	margin-left: 4px;
+	min-width: 16px;
+	width: 16px;
+	height: 16px;
+	opacity: 0;
+}
+
+.contact-info:hover .info {
+	opacity: 0.5;
+}
+
+.contact-info .info:hover {
+	opacity: 1.0;
+}
+
+.time {
+	color: @DisabledText;
+	font-size: 12px;
+	line-height: 18px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.badge {
+	color: @Window;
+	font-weight: bold;
+	font-size: 14px;
+	width: 24px;
+	height: 24px;
+	border-radius: 100px;
+	background-color: @Highlight;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,110 @@
+﻿using System;
+using System.Configuration;
+
+namespace PhanMemQuanLyThiCong.Common
+{
+    public static class ConstantAPI
+    {
+        /// <summary>
+        /// API User
+        /// </summary>
+        public static string API_USER_LOGIN = "users/login";
+        /// <summary>
+        /// API User Logout
+        /// </summary>
+        public static string API_USER_LOGOUT = "users/logout";
+
+        public static string API_KEYSTORE_INFO = "keystore/getInfoId";
+
+        public static string API_SYSINFO_FUNCTION = "sysinfo/functions";
+
+        public static string API_SYSINFO_COMMAND = "sysinfo/commands";
+
+        public static string API_SYSINFO_FUNCTIONTYPE = "sysinfo/functiontypes";
+
+        public static string API_SYSINFO_KEYSTORE = "sysinfo/keystore";
+
+        public static string API_SYSINFO_PERMISSION = "sysinfo/permissions";
+
+        public static string API_SYSINFO_USERAPPROVER = "sysinfo/userapprovers";
+
+<<<<<<< HEAD
+        public static string API_SYSINFO_TYPEACCOUNT = "sysinfo/typeaccounts";
+
+        public static string API_SYSINFO_APPUSER = "sysinfo/users";
+=======
+        public static string API_APPGROUP_GETALL = "appgroup/getall";
+
+        public static string API_APPGROUP_DELETE = "appgroup/delete";
+
+        public static string API_APPGROUP_UPDATE = "appgroup/update";
+
+        public static string API_APPGROUP_GETDETAIL = "appgroup/getdetail";
+
+>>>>>>> 96320bbb62e9a88a99778483adb119f99a59c6c1
+    }
+
+    /// <summary>
+    /// Get Parametor from Appsetting file config.
+    /// </summary>
+    public static class AppSettings
+    {
+        /// <summary>
+        /// API Url
+        /// </summary>
+        public static string ApiUrl
+        {
+            get { return ConfigurationManager.AppSettings["UriAPI"]; }
+        }
+
+        /// <summary>
+        /// CategoryCode
+        /// </summary>
+        public static string CategoryCode
+        {
+            get
+            {
+                try
+                {
+                    return ConfigurationManager.AppSettings["TempCategoryCode"];
+                }
+                catch (Exception)
+                {
+                    return "Mg==";
+                }
+            }
+        }
+
+        /// <summary>
+        /// User name
+        /// </summary>
+        public static string UserName
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// Password
+        /// </summary>
+        public static string Password
+        {
+            get;
+            set;
+
+        }
+
+        /// <summary>
+        /// SerialNo
+        /// </summary>
+        public static string SerialNo
+        {
+            get;
+            set;
+
+        }
+
+        public static string PCName { get { return Environment.MachineName; } }
+
+    }
+}

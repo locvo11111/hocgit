@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PhanMemQuanLyThiCong.Common.Helper
+{
+    public static class TempWorkLoadHelper
+    {
+<<<<<<< HEAD
+
+            public static void CalcTempJobWorkLoad()
+            {
+                WaitFormHelper.ShowWaitForm("Đang tính toán toàn bộ khối lượng công tác");
+            DataProvider.InstanceTHDA.ExecuteNonQuery("TempWorkload.Job", isSQLFile: true, AddToDeletedDataTable: false);
+                WaitFormHelper.CloseWaitForm();
+            }
+            public static void CalcTempGroupWorkLoad()
+            {
+                WaitFormHelper.ShowWaitForm("Đang tính toán toàn bộ khối lượng nhóm");
+                DataProvider.InstanceTHDA.ExecuteNonQuery("TempWorkload.Group", isSQLFile: true, AddToDeletedDataTable: false);
+                WaitFormHelper.CloseWaitForm();
+            }
+            public static void CalcTempMaterialWorkLoad()
+            {
+                WaitFormHelper.ShowWaitForm("Đang tính toán toàn bộ khối lượng vật tư");
+                DataProvider.InstanceTHDA.ExecuteNonQuery("TempWorkload.Material", isSQLFile: true, AddToDeletedDataTable: false);
+                WaitFormHelper.CloseWaitForm();
+            }
+
+            public static void CalcAllTempWorkload()
+            {
+                CalcTempJobWorkLoad();
+                CalcTempGroupWorkLoad();
+                CalcTempMaterialWorkLoad();
+            }
+        
+=======
+        public static void CalcTempJobWorkLoad()
+        {
+            WaitFormHelper.ShowWaitForm("Đang tính toán toàn bộ khối lượng công tác");
+            DataProvider.InstanceTHDA.ExecuteNonQuery("TempWorkLoad/Job.SQL", isSQLFile: true);
+            WaitFormHelper.CloseWaitForm();
+        }
+        public static void CalcTempGroupWorkLoad()
+        {
+            WaitFormHelper.ShowWaitForm("Đang tính toán toàn bộ khối lượng nhóm");
+            DataProvider.InstanceTHDA.ExecuteNonQuery("TempWorkLoad/Group.SQL", isSQLFile: true);
+            WaitFormHelper.CloseWaitForm();
+        }
+        public static void CalcTempMaterialWorkLoad()
+        {
+            WaitFormHelper.ShowWaitForm("Đang tính toán toàn bộ khối lượng vật tư");
+            DataProvider.InstanceTHDA.ExecuteNonQuery("TempWorkLoad/Material.SQL", isSQLFile: true);
+            WaitFormHelper.CloseWaitForm();
+        }
+
+        public static void CalcAllTempWorkload()
+        {
+            CalcTempJobWorkLoad();
+            CalcTempGroupWorkLoad();
+            CalcTempMaterialWorkLoad();
+        }
+>>>>>>> dev31012024
+    }
+}

@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PhanMemQuanLyThiCong.Common.ViewModel.KLHN
+{
+    public class KLHN
+    {
+        public int MyProperty { get; set; }
+        public string CodeCha { get; set; }
+        public string CodeChaThiCong { get; set; }
+        public string Code { get; set; } = Guid.NewGuid().ToString();
+        public string ParentCode { get; set; } = Guid.NewGuid().ToString();
+        public string CodeCongTacTheoGiaiDoan { get; set; }
+        public DateTime Ngay { get; set; }
+        public string NhaCungCap { get; set; }
+        public string LyTrinhCaoDo { get; set; }
+        public int FileCount { get; set; } = 0;
+<<<<<<< HEAD
+        public double? DonGiaThiCong { get; set; }
+        public double? DonGiaKeHoach { get; set; }
+=======
+        public double? KhoiLuongKeHoach { get; set; }
+        public double? KhoiLuongBoSung { get; set; }
+        public double? KhoiLuongKeHoachNhanThau { get; set; }
+        public double? DonGiaKeHoach { get; set; }
+        public double? DonGiaKeHoachNhanThau { get; set; }
+        public double? KhoiLuongThiCong { get; set; }
+        public long? DonGiaThiCong { get; set; }
+        public double? DonGiaThiCongNhanThau { get; set; }
+>>>>>>> dev31012024
+
+        public double? KhoiLuongKeHoach { get; set; }
+        public double? KhoiLuongKeHoachGoc { get; set; }
+        public double? KhoiLuongThiCong { get; set; }
+        public double? KhoiLuongBoSung { get; set; }
+        public double? ThanhTienKeHoach { get; set; }
+        public double? ThanhTienKeHoachGoc { get; set; }
+        public double? ThanhTienThiCong { get; set; }
+        public double? ThanhTienBoSung { get; set; }
+    
+        public double? LuyKeKhoiLuongKeHoach { get; set; }
+        public double? LuyKeKhoiLuongKeHoachGoc { get; set; }
+        public double? LuyKeKhoiLuongThiCong { get; set; }
+        public double? LuyKeKhoiLuongBoSung { get; set; }
+        public double? LuyKeThanhTienKeHoach { get; set; }
+        public double? LuyKeThanhTienKeHoachGoc { get; set; }
+        public double? LuyKeThanhTienThiCong { get; set; }
+        public double? LuyKeThanhTienBoSung { get; set; }
+        
+
+        public double? KhoiLuongNhapKho { get; set; }
+
+        public bool IsThuCong { get; set; } = false;
+        public bool IsEdited { get; set; } = false;
+    }
+}

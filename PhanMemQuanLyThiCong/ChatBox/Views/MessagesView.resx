@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="messageBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>183, 17</value>
+  </metadata>
+  <data name="typingBox.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.typingBox {
+	padding: 0px 16px 16px 16px;
+	background-color: @Control;
+}
+
+.container {
+	background-color: @Window;
+	color: @WindowText;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	align-self: center;
+	padding: 5px 8px 5px 13px;
+	border-style: solid;
+	border-color: @WindowText/0.2;
+	border-width: 1px;
+	border-radius: 8px 8px 0px 8px;
+}
+
+.message {
+	max-height: 60px;
+	flex-grow: 1;
+}
+
+.separator-Container {
+	width: 1px;
+	height: 39px;
+	background-color: @WindowText/0.1;
+	margin: 6px 16px;
+}
+
+.button_send {
+	/*width: 23px;
+	height: 23px;*/
+	padding: 15px 10px 15px 5px;
+	border: 1px solid #999999;
+	background-color: #999999;
+	opacity: 0.5;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+	.button_send:hover {
+		border-radius: 4px;
+		background-color: @Control;
+	}
+
+	.button_send:disabled {
+		opacity: 0.25;
+		background-color: #00000000;
+	}
+</value>
+  </data>
+  <data name="typingBox.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class='typingBox'&gt;
+   
+    &lt;div class='container'&gt;
+            &lt;input name="messageEdit" class="message" /&gt;
+            &lt;div class='separator-Container'&gt;&lt;/div&gt;
+            &lt;span id="btn_Send" class='button_send'&gt;Gửi&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="toolbarPanel.HtmlTemplate.Styles" xml:space="preserve">
+    <value>.toolBar {
+	height: 48px;
+	background-color: @Window;
+	color: @WindowText;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 8px 0px 16px;
+	margin-bottom:1px;
+	box-shadow: 0px 1px 0px @WindowText/0.1;
+	
+}
+
+.contactName {
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 24px;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: blue;
+	width: 30%;
+}
+
+.buttonPanel {
+	align-items: center;
+}
+
+.button {
+	font-family: 'Segoe UI';
+	border-radius: 4px;
+	border-width: 1px;
+	border-style: solid;
+	padding: 4px 8px;
+	font-size: 12px;
+	margin-right:6px;
+	text-align: center;
+}
+
+.simple {
+	border-color: #dddddd;
+}
+
+	.simple:hover {
+		background-color: #f5f5f5;
+	}
+
+	.simple:active {
+		background-color: #c2c2c2;
+	}
+
+.green {
+	border-color: @green;
+	background-color: @green;
+	color: @white;
+	opacity: 0.8;
+}
+
+	.green:hover {
+		background-color: @green;
+		box-shadow: 0px 0px 3px @green;
+		opacity: 0.9;
+	}
+
+	.green:active {
+		background-color: @green;
+		box-shadow: 0px 0px 3px @green;
+		opacity: 1;
+	}
+
+.blue {
+	border-color: @blue;
+	background-color: @blue;
+	color: @white;
+	opacity: 0.8;
+}
+
+	.blue:hover {
+		background-color: @blue;
+		box-shadow: 0px 0px 3px @blue;
+		opacity: 0.9;
+	}
+
+	.blue:active {
+		background-color: @blue;
+		box-shadow: 0px 0px 3px @blue;
+		opacity: 1;
+	}
+
+.red {
+	border-color: @red;
+	background-color: @red;
+	color: @white;
+	opacity: 0.8;
+}
+
+	.red:hover {
+		background-color: @red;
+		box-shadow: 0px 0px 3px @red;
+		opacity: 0.9;
+	}
+
+	.red:active {
+		background-color: @red;
+		box-shadow: 0px 0px 3px @red;
+		opacity: 1;
+	}
+
+.outline {
+	border-color: #dddddd;
+}
+
+	.outline:hover {
+		background-color: #f5f5f5;
+	}
+
+	.outline:active {
+		background-color: #c2c2c2;
+	}
+
+.green-outline {
+	border-color: @green;
+	color: @green;
+}
+
+	.green-outline:hover {
+		background-color: @green/0.1;
+	}
+
+	.green-outline:active {
+		background-color: @green/0.4;
+	}
+
+.red-outline {
+	border-color: @red;
+	color: @red;
+}
+
+	.red-outline:hover {
+		background-color: @red/0.1;
+	}
+
+	.red-outline:active {
+		background-color: @red/0.4;
+	}
+
+.blue-outline {
+	border-color: @blue;
+	color: @blue;
+}
+
+	.blue-outline:hover {
+		background-color: @blue/0.1;
+	}
+
+	.blue-outline:active {
+		background-color: @blue/0.4;
+	}
+
+.text {
+	border-style: none;
+	border-width: 0;
+}
+
+	.text:hover {
+		background-color: #f5f5f5;
+	}
+
+	.text:active {
+		background-color: #c2c2c2;
+	}
+
+.green-text {
+	color: @green;
+	border-style: none;
+	border-width: 0;
+}
+
+	.green-text:hover {
+		background-color: @green/0.1;
+	}
+
+	.green-text:active {
+		background-color: @green/0.4;
+	}
+
+.blue-text {
+	color: @blue;
+	border-style: none;
+	border-width: 0;
+}
+
+	.blue-text:hover {
+		background-color: @blue/0.1;
+	}
+
+	.blue-text:active {
+		background-color: @blue/0.4;
+	}
+
+.red-text {
+	color: @red;
+	border-style: none;
+	border-width: 0;
+}
+
+	.red-text:hover {
+		background-color: @red/0.1;
+	}
+
+	.red-text:active {
+		background-color: @red/0.4;
+	}
+</value>
+  </data>
+  <data name="toolbarPanel.HtmlTemplate.Template" xml:space="preserve">
+    <value>&lt;div class='toolBar'&gt;
+    &lt;span class='contactName'&gt;${GroupChatName}&lt;/span&gt;
+    &lt;div class='buttonPanel'&gt;
+        &lt;span id="btnPhoneCall" class='button green' title="Gửi file ảnh"&gt;Upload Ảnh&lt;/span&gt;
+        &lt;span id="btnVideoCall" class='button blue' title="Gửi file tài liệu"&gt;Upload File&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</value>
+  </data>
+  <metadata name="mvvmContext.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>361, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>49</value>
+  </metadata>
+  <metadata name="messageMenuPopup.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
